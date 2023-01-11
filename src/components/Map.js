@@ -7,9 +7,11 @@ import React, {
 } from "react";
 
 import PrismaZoom from "react-prismazoom";
+import { Link } from "react-router-dom";
 // import witcherMap from "../assets/Witcherx4.jpeg";
 import witcherMapt9 from "../assets/WitcherMapX4T9.jpg";
 import "./Map.css";
+
 const Map = () => {
   const prismaZoom = useRef(PrismaZoom);
   const zoomCounterRef = useRef(HTMLSpanElement);
@@ -43,11 +45,22 @@ const Map = () => {
               backgroundRepeat: "no-repeat",
             }}
           />
-          <div className="map-point">poulet</div>
+          <div className="map-point">
+            {" "}
+            <Link
+              to="/cities/poulet"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              poulet
+            </Link>
+          </div>
           <div className="map-point2">
-            <a href="#" style={{ textDecoration: "none", color: "white" }}>
+            <Link
+              to="/regions/cintra"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               Cintra
-            </a>
+            </Link>
           </div>
           {/* <div className="map-image">
             <div className="map-point">poulet</div>
