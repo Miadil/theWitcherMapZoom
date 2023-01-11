@@ -1,0 +1,27 @@
+.map-zoom {
+  height: 100vh;
+  width: 100vw;
+  /* position: relative; */
+}
+.map-point {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.map-point2 {
+  color: white;
+  position: absolute;
+  top: 42%;
+  left: 42%;
+}
+.map-global {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  /* position: relative; */
+
+  /* margin: 10px; */
+}
